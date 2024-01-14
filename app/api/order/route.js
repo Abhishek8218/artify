@@ -3,8 +3,6 @@ import { connectToDB } from '@mongodb/database'
 
 const stripe = require('stripe')(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY)
 
-a
-
 async function getCartItems(line_items) {
   return new Promise((resolve, reject) => {
     let cartItems = []
