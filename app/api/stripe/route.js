@@ -22,6 +22,7 @@ export const POST = async (req, res) => {
               product_data: {
                 name: item.title,
                 // images: `${req.headers.get("origin")}/${item.image}`,
+                images:[item.images],
                 metadata: {
                   productId: item.workId
                 }
